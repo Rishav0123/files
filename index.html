@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown List Example</title>
+</head>
+<body>
+    <h1>Dropdown List Example</h1>
+    <form>
+        <label for="dropdown">Select an option:</label>
+        <select id="dropdown">
+            {% for option in nse_stock_symbols %}
+            <option value="{{ option }}">{{ option }}</option>
+            {% endfor %}
+        </select>
+    </form>
+</body>
+</html>
